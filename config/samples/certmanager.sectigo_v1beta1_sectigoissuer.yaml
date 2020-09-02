@@ -1,0 +1,7 @@
+apiVersion: certmanager.sectigo.oit.colorado.edu/v1beta1
+kind: SectigoIssuer
+metadata:
+  name: sectigoissuer-sample
+spec:
+  # Add fields here
+  foo: bar

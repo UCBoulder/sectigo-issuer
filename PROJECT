@@ -1,0 +1,7 @@
+domain: oit.colorado.edu
+repo: sectigo-issuer
+resources:
+- group: certmanager.sectigo
+  kind: SectigoIssuer
+  version: v1beta1
+version: "2"

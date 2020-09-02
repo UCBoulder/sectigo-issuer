@@ -1,0 +1,20 @@
+# permissions for end users to view sectigoissuers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: sectigoissuer-viewer-role
+rules:
+- apiGroups:
+  - certmanager.sectigo.oit.colorado.edu
+  resources:
+  - sectigoissuers
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - certmanager.sectigo.oit.colorado.edu
+  resources:
+  - sectigoissuers/status
+  verbs:
+  - get
